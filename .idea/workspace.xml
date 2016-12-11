@@ -37,8 +37,8 @@
       <file leaf-file-name="codefresh.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codefresh.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73741794" vertical-offset="218" max-vertical-offset="675">
-              <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.6717724" vertical-offset="218" max-vertical-offset="675">
+              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -212,8 +212,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codefresh.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73741794" vertical-offset="218" max-vertical-offset="675">
-          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.6717724" vertical-offset="218" max-vertical-offset="675">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
           <folding />
         </state>
       </provider>

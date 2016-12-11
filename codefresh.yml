@@ -33,7 +33,7 @@
                 - VERSION_TO_DEPLOY=${{VERSION}}
        composition_candidates:
           deploy-status:
-            image: node:latest# image that will be tested
+            image: node:latest # image that will be tested
             command:
               - sleep 10
 
