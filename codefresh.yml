@@ -34,6 +34,6 @@
        composition_candidates:
           deploy-status:
             image: ${{build-step}} # image that will be tested
-            commands:
+            command:
               - sleep 10
 
