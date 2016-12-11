@@ -4,7 +4,7 @@
     preb_run_validation:
        image: node:latest
        commands:
-         - ls ./Dockerfile
+         - ls .
          - git status
          - git log
     build-step:
