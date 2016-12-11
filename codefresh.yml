@@ -14,7 +14,7 @@
       image_name: verchol/deploy-demo
       tag: ${{CF_BRANCH}}
 
-   push_to_docker_registry:
+    push_to_docker_registry:
       type: push
       candidate: ${{build-step}}
       tag: ${{CF_BRANCH}}
