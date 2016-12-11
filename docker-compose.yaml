@@ -1,0 +1,9 @@
+version: '2.0'
+services:
+      deploy:
+         image: verchol/deploy-demo:master
+         environment:
+            - VERSION_TO_DEPLOY="2.2.2.2"
+      deploy-status:
+         image: node:latest # image that will be tested
+         command:   sleep 10

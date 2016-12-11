@@ -2,11 +2,16 @@ const request           = require('superagent');
 const measureTime       = require('measure-time');
 const html              = require('html');
 const colors            = require('colors');
+const _                 = require('lodash');
 
 const getElapsed = measureTime();
 
-console.log(`${"we are starting deploying of version".green} ${process.env.VERSION_TO_DEPLOY.red}`);
 
+var source = {a:1};
+(!process.env.VERSION_TO_DEPLOY) ? process.env.VERSION_TO_DEPLOY= "1.1.1.1" : process.env.VERSION_TO_DEPLOY
+console.log(`dest ${process.env.VERSION_TO_DEPLOY}`);
+
+console.log(`${"we are starting deploying of version".green} ${process.env.VERSION_TO_DEPLOY.red}`);
 
 request
     .post('g.codefresh.io')
