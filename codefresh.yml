@@ -6,7 +6,7 @@
        commands:
          - ls .
          - git status
-         - git --no-pager log
+         - git describe --tags
     build-step:
       type: build
       description: Builds my service
