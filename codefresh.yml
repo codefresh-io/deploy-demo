@@ -1,6 +1,12 @@
 ---
   version: "1.0"
-  steps: 
+  steps:
+    preb_run_validation:
+       image: node:latest
+       commands:
+         - ls ./Dockerfile
+         - git status
+         - git log
     build-step:
       type: build
       description: Builds my service
