@@ -6,7 +6,7 @@
        commands:
          - ls .
          - git status
-         - git log --no-pager 
+         - git --no-pager log  
     build-step:
       type: build
       description: Builds my service
