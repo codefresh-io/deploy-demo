@@ -1,0 +1,8 @@
+---
+  version: "1.0"
+  steps: 
+    myStep: 
+      image: "node:latest"
+      commands: 
+        - "node --version"
+        - "npm install -g express"
