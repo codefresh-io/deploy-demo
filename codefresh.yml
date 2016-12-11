@@ -30,7 +30,7 @@
            deploy:
              image: verchol/deploy-demo:master
              environment:
-                - VERSION_TO_DEPLOY=$VERSION
+                - VERSION_TO_DEPLOY=${{VERSION}}
        composition_candidates:
           deploy-status:
             image: ${{build-step}} # image that will be tested
