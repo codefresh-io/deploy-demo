@@ -27,12 +27,12 @@
        composition:
          version: '2'
          services:
-           db:
+           deploy:
              image: verchol/deploy-demo:master
-             environments:
+             environment:
                 - VERSION_TO_DEPLOY=$VERSION
        composition_candidates:
-         deploy-status:
-          image: ${{build-step}} # image that will be tested
-          command: sleep 10;
+          deploy-status:
+            image: ${{build-step}} # image that will be tested
+            command: sleep 10;
 
