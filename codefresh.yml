@@ -1,12 +1,12 @@
 ---
   version: "1.0"
   steps: 
-    myStep:
+    build-step:
       type: build
       description: Builds my service
       dockerfile: dockerfiles/Dockerfile.prod
       image-name: verchol/deploy-demo
-      tag: develop # ${{CF_BRANCH}}
+      tag: ${{CF_BRANCH}}
 
 
     deploy:
@@ -16,8 +16,10 @@
          services:
            db:
              image: codefresh/deploy-demo:master
-       #composition_candidates:
-        # deploy-status:
-         #  image: ${{build_the_image}} # image that will be tested
-          # command: gulp unit_test # your test command
+             environments:
+                - VERSION_TO_DEPLOY
+       composition_candidates:
+         deploy-status:
+          image: ${{build-step}} # image that will be tested
+          command: sleep 10;
 
