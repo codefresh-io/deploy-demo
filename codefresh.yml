@@ -4,7 +4,7 @@
     build-step:
       type: build
       description: Builds my service
-      dockerfile: dockerfiles/Dockerfile.prod
+      dockerfile: dockerfiles/Dockerfile
       image-name: verchol/deploy-demo
       tag: ${{CF_BRANCH}}
 
