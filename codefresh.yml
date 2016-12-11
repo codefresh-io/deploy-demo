@@ -35,5 +35,5 @@
           deploy-status:
             image: node:latest # image that will be tested
             command:
-              - sleep 10
+              - bin/bash -c "sleep 10"
 
