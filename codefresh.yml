@@ -34,6 +34,5 @@
        composition_candidates:
           deploy-status:
             image: node:latest # image that will be tested
-            command:
-              - bin/bash -c "sleep 10"
+            command: sleep 10
 
