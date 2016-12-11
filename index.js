@@ -5,6 +5,9 @@ const colors            = require('colors');
 
 const getElapsed = measureTime();
 
+console.log(`${"we are starting deploying of version".green} ${process.env.VERSION_TO_DEPLOY.red}`);
+
+
 request
     .post('g.codefresh.io')
     .send({ name: 'Manny', species: 'cat' })

@@ -1,8 +1,23 @@
 ---
   version: "1.0"
   steps: 
-    myStep: 
-      image: "node:latest"
-      commands: 
-        - "node --version"
-        - "npm install -g express"
+    myStep:
+      type: build
+      description: Builds my service
+      dockerfile: dockerfiles/Dockerfile.prod
+      image-name: verchol/deploy-demo
+      tag: develop # ${{CF_BRANCH}}
+
+
+    deploy:
+       type: composition
+       composition:
+         version: '2'
+         services:
+           db:
+             image: codefresh/deploy-demo:master
+       #composition_candidates:
+        # deploy-status:
+         #  image: ${{build_the_image}} # image that will be tested
+          # command: gulp unit_test # your test command
+
