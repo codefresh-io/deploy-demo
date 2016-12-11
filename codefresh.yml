@@ -5,9 +5,16 @@
       type: build
       description: Builds my service
       dockerfile: Dockerfile
-      image-name: verchol/deploy-demo
+      image_name: verchol/deploy-demo
       tag: ${{CF_BRANCH}}
 
+   push_to_docker_registry:
+      type: push
+      candidate: ${{build-step}}
+      tag: ${{CF_BRANCH}}
+      credentials:
+        username: ${{user}}
+        password: ${{pwd}}
 
     deploy:
        type: composition
@@ -17,7 +24,7 @@
            db:
              image: codefresh/deploy-demo:master
              environments:
-                - VERSION_TO_DEPLOY
+                - VERSION_TO_DEPLOY=$VERSION
        composition_candidates:
          deploy-status:
           image: ${{build-step}} # image that will be tested
