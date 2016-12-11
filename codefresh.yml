@@ -6,7 +6,7 @@
        commands:
          - ls .
          - git status
-         - git --no-pager log  
+         - git --no-pager log
     build-step:
       type: build
       description: Builds my service
@@ -28,7 +28,7 @@
          version: '2'
          services:
            db:
-             image: codefresh/deploy-demo:master
+             image: verchol/deploy-demo:master
              environments:
                 - VERSION_TO_DEPLOY=$VERSION
        composition_candidates:
