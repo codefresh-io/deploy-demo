@@ -2,7 +2,7 @@
   version: "1.0"
   steps:
      show-info:
-       image: codefresh/step-info-commit
+       image: codefresh/step-commit-info
        working-directory: /usr/src/app
 
 

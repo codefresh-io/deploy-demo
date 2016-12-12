@@ -87,8 +87,8 @@
       <file leaf-file-name="codefresh.validation.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codefresh.validation.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20309478" vertical-offset="0" max-vertical-offset="517">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.116054155" vertical-offset="0" max-vertical-offset="517">
+              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -433,8 +433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codefresh.validation.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20309478" vertical-offset="0" max-vertical-offset="517">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.116054155" vertical-offset="0" max-vertical-offset="517">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
           <folding />
         </state>
       </provider>
