@@ -11,7 +11,8 @@
     build-step:
         type: build
         description: Builds my service
-        dockerfile: Dockerfile
+        working-directory : ./build-info
+        dockerfile: ./build-info/Dockerfile
         image_name: verchol/deploy-demo
         tag: ${{CF_BRANCH}}
 
