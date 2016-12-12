@@ -16,8 +16,8 @@ var t = new Table({
    // , colWidths: [100, 200]
 });
 t.push({"CF_BRANCH" : branch.green});
-t.push({"sha" : sha.green});
-t.push({"shaMessage" : shaMessage.green});
+t.push({"CF_REVISION" : sha.green});
+t.push({"CF_COMMIT_MESSAGE" : shaMessage.green});
 
 
 
