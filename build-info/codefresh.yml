@@ -17,6 +17,6 @@
 
     show-info:
        image: ${{build-step}}
-       working-directory: /src
+       working-directory: /usr/src/app
        commands:
          - node ./index
