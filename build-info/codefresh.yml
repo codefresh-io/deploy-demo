@@ -16,9 +16,21 @@
         image_name: verchol/deploy-demo
         tag: ${{CF_BRANCH}}
 
+
+    push_step:
+        type: push
+        description: push image to docker hub
+        candidate: ${{build_step}}
+        tag: ${{CF_BRANCH}}
+        credentials:
+          username: ${{user}}
+          password: ${{pwd}}
+
     show-info:
        image: ${{build-step}}
        working-directory: /usr/src/app
        commands:
          - cat package.json
          - node ./index
+
+     step-commit-info
