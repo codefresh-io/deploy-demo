@@ -12,7 +12,7 @@
         type: build
         description: Builds my service
         working-directory : ./build-info
-        dockerfile: ./build-info/Dockerfile
+        dockerfile: ./Dockerfile
         image_name: verchol/deploy-demo
         tag: ${{CF_BRANCH}}
 
