@@ -1,0 +1,11 @@
+# codefresh yaml file
+  version: "1.0"
+  steps:
+     show-info:
+       image: codefresh/step-info-commit
+       working-directory: /usr/src/app
+
+
+
+
+
