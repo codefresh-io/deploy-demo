@@ -33,4 +33,3 @@
          - cat package.json
          - node ./index
 
-     step-commit-info
