@@ -20,4 +20,5 @@
        image: ${{build-step}}
        working-directory: /usr/src/app
        commands:
+         - cat package.json
          - node ./index
