@@ -22,9 +22,9 @@
         description: push image to docker hub
         candidate: ${{build-step}}
         tag: ${{CF_BRANCH}}
-        credentials:
-          username: ${{user}}
-          password: ${{pwd}}
+       # credentials:
+        #  username: ${{user}}
+         # password: ${{pwd}}
 
     show-info:
        image: ${{build-step}}
