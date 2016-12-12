@@ -20,7 +20,7 @@
     push_step:
         type: push
         description: push image to docker hub
-        candidate: ${{build_step}}
+        candidate: ${{build-step}}
         tag: ${{CF_BRANCH}}
         credentials:
           username: ${{user}}
