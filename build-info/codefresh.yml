@@ -14,7 +14,7 @@
         image_name: verchol/deploy-demo
         tag: ${{CF_BRANCH}}
 
-    preb_run_validation:
+    show-info:
        image: ${{build-step}}
        commands:
          - node ./index
