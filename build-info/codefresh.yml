@@ -13,7 +13,7 @@
         description: Builds my service
         working-directory : ./build-info
         dockerfile: ./Dockerfile
-        image_name: codefresh/step-commit-info
+        image_name: verchol/step-commit-info
         tag: ${{CF_BRANCH}}
 
 
