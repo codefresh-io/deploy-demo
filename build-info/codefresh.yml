@@ -1,0 +1,43 @@
+# codefresh yaml file
+  version: "1.0"
+  steps:
+    preb_run_validation:
+       image: node:latest
+       commands:
+         - ls .
+         - git status
+         - git describe --tags
+    build-step:
+      type: build
+      description: Builds my service
+      dockerfile: Dockerfile
+      image_name: verchol/deploy-demo
+      tag: ${{CF_BRANCH}}
+
+    preb_run_validation:
+       image: {{build-step}}
+       commands:
+          - node ./index
+
+#    push_to_docker_registry:
+#      type: push
+#      candidate: ${{build-step}}
+#      tag: ${{CF_BRANCH}}
+#      credentials:
+#        username: ${{user}}
+#        password: ${{pwd}}
+#
+#    deploy:
+#       type: composition
+#       composition:
+#         version: '2'
+#         services:
+#           deploy:
+#             image: verchol/deploy-demo:master
+#             environment:
+#                - VERSION_TO_DEPLOY=${{VERSION}}
+#       composition_candidates:
+#          deploy-status:
+#            image: node:latest # image that will be tested
+#            command: sleep 10
+
