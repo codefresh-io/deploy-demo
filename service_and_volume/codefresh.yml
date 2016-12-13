@@ -2,6 +2,7 @@
   version: "1.0"
   steps:
      unit_test:
+     type:composition
      composition:
         version: '2'
           services:
