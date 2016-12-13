@@ -1,25 +1,9 @@
 # codefresh yaml file
   version: "1.0"
   steps:
-     unit_test:
-     composition:
-        version: '2'
-          services:
-            service1:
-              volumes:
-                - ${{CF_VOLUME}}:/codefresh/volume
-              image: codefresh/step-commit-info:latest
-              #command: bash -c "echo hello > /codefresh/volume/myfile.txt"
-              working_dir: /codefresh/volume
-        volumes:
-          ${{CF_VOLUME}}:
-          external: true
-     composition_candidates:
-        test:
-          image: codefresh/step-commit-info:latest
-          working_dir: /codefresh/volume
-          volumes :
-             - ${{CF_VOLUME}}:/codefresh/volume
-          #command: ls /codefresh/volume
+     show-info:
+       image: codefresh/step-info-commit
+       working-directory: /usr/src/app
+
 
 
